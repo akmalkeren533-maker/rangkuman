@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#176b9b">
+<meta name="description" content="Rangkuman interaktif Webinar EinSight Batch #2: Think, Write, Inspire bersama Ustadz Ahmad Rifa'i Rif'an.">
+<title>Think, Write, Inspire — EinSight Batch #2</title>
+<style>
+:root{--blue:#176b9b;--blue2:#319acb;--sky:#bde5f5;--navy:#102c46;--ink:#18364d;--muted:#60798b;--paper:#f8fcfe;--line:#dcecf4;--white:#fff;--shadow:0 22px 60px rgba(16,64,95,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit}button{font:inherit}.progress{position:fixed;z-index:30;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--blue2),#8bd7f3);width:0}
+.nav{position:fixed;z-index:20;top:4px;left:0;right:0;background:rgba(255,255,255,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,236,244,.8)}.navin{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:-.04em;color:var(--blue);display:flex;align-items:center;gap:9px}.brandmark{width:30px;height:30px;border-radius:10px;background:linear-gradient(145deg,#9bdcf4,var(--blue));display:grid;place-items:center;color:white;font-weight:900}.navlinks{display:flex;gap:18px;font-size:.82rem;color:#42657a}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--blue)}.menu{display:none;border:0;background:#e9f6fb;border-radius:10px;padding:8px 12px;color:var(--blue)}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}.hero{min-height:94vh;padding:145px 0 90px;position:relative;overflow:hidden;background:radial-gradient(circle at 83% 22%,rgba(189,229,245,.72),transparent 28%),linear-gradient(135deg,#fff 0%,#f0f9fd 54%,#dceff8 100%)}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(49,154,203,.16);border-radius:50%;width:470px;height:470px;right:-150px;top:110px;animation:orbit 24s linear infinite}.hero:after{width:620px;height:620px;right:-220px;top:35px;animation-direction:reverse}.orb{position:absolute;width:15px;height:15px;border-radius:50%;background:#57b4df;box-shadow:0 0 0 12px rgba(87,180,223,.12);right:19%;top:27%;animation:float 5s ease-in-out infinite}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:26px;height:2px;background:var(--blue2)}h1{font-size:clamp(3.6rem,10vw,8.4rem);line-height:.88;letter-spacing:-.075em;margin:25px 0 22px;color:var(--blue);max-width:900px}h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px #8abbd3}.subtitle{font-size:clamp(1.05rem,2.5vw,1.55rem);font-weight:650;color:var(--navy);max-width:670px}.hero-meta{margin-top:38px;display:flex;flex-wrap:wrap;gap:12px}.pill{border:1px solid #c7e3ef;background:rgba(255,255,255,.75);border-radius:999px;padding:9px 15px;font-size:.86rem;color:#42657a}.hero-quote{margin-top:62px;max-width:600px;padding:18px 22px;border-left:3px solid var(--blue2);background:rgba(255,255,255,.62);font-size:1.03rem;color:#31566e}.hero-quote strong{display:block;color:var(--blue);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.section{padding:105px 0;position:relative}.section.white{background:white}.section.blue{background:linear-gradient(145deg,#176b9b,#102c46);color:white}.section-head{max-width:760px;margin-bottom:44px}.kicker{font-size:.75rem;font-weight:850;letter-spacing:.18em;text-transform:uppercase;color:var(--blue2)}.blue .kicker{color:#a8e1f7}h2{font-size:clamp(2.1rem,5vw,4rem);line-height:1.04;letter-spacing:-.055em;margin:12px 0 18px;color:var(--navy)}.blue h2{color:white}.lead{font-size:1.12rem;color:var(--muted);max-width:760px}.blue .lead{color:#d0e8f3}.bigline{font-size:clamp(1.7rem,4vw,3rem);font-weight:800;line-height:1.18;letter-spacing:-.04em;max-width:850px}.bigline em{font-style:normal;color:#7bc8e8}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid.two{grid-template-columns:repeat(2,1fr)}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 30px rgba(22,85,119,.045);transition:transform .28s,box-shadow .28s,border-color .28s}.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#a7d6e9}.card .num{font-size:.75rem;font-weight:850;color:var(--blue2);letter-spacing:.12em}.card h3{font-size:1.22rem;line-height:1.2;margin:10px 0;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.94rem}.card.dark{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.17);box-shadow:none}.card.dark h3{color:white}.card.dark p{color:#d0e8f3}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:stretch}.flow .card{position:relative;overflow:hidden}.flow .card:after{content:"→";position:absolute;right:18px;top:15px;color:#9bcfe4;font-size:1.4rem}.flow .card:last-child:after{content:"✦"}
+.note{border-radius:22px;padding:28px;background:#eaf7fc;border:1px solid #cfe9f4;color:#31566e}.note strong{color:var(--blue)}.quote{font-size:clamp(1.4rem,3vw,2.4rem);line-height:1.28;letter-spacing:-.035em;font-weight:760;color:var(--navy);max-width:850px}.quote small{display:block;margin-top:18px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);font-weight:800}
+.interactive{cursor:pointer;text-align:left;width:100%;color:inherit}.interactive:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #f4bc54;outline-offset:3px}.detail{display:none;margin-top:14px;padding-top:13px;border-top:1px solid var(--line);font-size:.91rem;color:var(--muted)}.card.open .detail{display:block;animation:fade .3s}.tap{display:inline-block;margin-top:13px;font-size:.76rem;color:var(--blue);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.eight{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.eight .card{min-height:175px}.barrier{display:flex;align-items:center;gap:14px}.barrier b{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;border-radius:50%;background:#e6f5fb;color:var(--blue)}.barrier .detail{margin-left:48px}.steps{display:flex;gap:0;align-items:stretch}.step{flex:1;padding:25px 22px;border-top:3px solid #8bcde7;background:#f4fbfe}.step+ .step{border-left:1px solid #dcecf4}.step strong{display:block;color:var(--blue);font-size:1.45rem}.formula{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.formula .card{background:linear-gradient(155deg,#fff,#eef9fd)}.formula .letter{font-size:3.5rem;line-height:1;font-weight:900;color:var(--blue2);letter-spacing:-.08em}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.check{display:flex;align-items:flex-start;gap:12px;padding:15px 16px;background:#f2f9fc;border:1px solid var(--line);border-radius:14px}.check input{accent-color:var(--blue);width:18px;height:18px;margin-top:4px}.check span{font-size:.94rem}.counter{font-size:.82rem;color:var(--muted);margin-top:12px}
+.faq{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:white}.faqitem+ .faqitem{border-top:1px solid var(--line)}.faqbtn{width:100%;padding:19px 20px;border:0;background:white;text-align:left;display:flex;justify-content:space-between;gap:15px;align-items:center;color:var(--navy);font-weight:750;cursor:pointer}.faqbtn span:last-child{color:var(--blue);font-size:1.3rem}.answer{display:none;padding:0 20px 20px;color:var(--muted);max-width:900px}.faqitem.active .answer{display:block;animation:fade .3s}.closing{padding:120px 0;text-align:center;background:radial-gradient(circle at 50% 0%,#d7f0fa,transparent 48%),#f7fcfe}.closing h2{font-size:clamp(2.8rem,7vw,6rem);max-width:900px;margin:18px auto}.closing p{max-width:650px;margin:0 auto 28px;color:var(--muted);font-size:1.08rem}.btn{display:inline-flex;align-items:center;gap:9px;background:var(--blue);color:white;text-decoration:none;border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer;box-shadow:0 10px 25px rgba(23,107,155,.2);transition:.2s}.btn:hover{transform:translateY(-3px);background:var(--navy)}footer{background:var(--navy);color:#c6dfeb;padding:30px 24px;text-align:center;font-size:.85rem}footer strong{color:white}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}.delay1{transition-delay:.1s}.delay2{transition-delay:.2s}.delay3{transition-delay:.3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:58px;left:14px;right:14px;padding:18px;background:white;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);flex-direction:column}.navlinks.show{display:flex}.menu{display:block}.grid{grid-template-columns:repeat(2,1fr)}.eight{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr}.steps{flex-direction:column}.step+.step{border-left:0;border-top:1px solid #dcecf4}.hero{min-height:85vh}.hero-quote{margin-top:42px}}
+@media(max-width:520px){.wrap{padding:0 18px}.section{padding:76px 0}.grid,.grid.two,.formula,.checklist{grid-template-columns:1fr}.eight{grid-template-columns:repeat(2,1fr)}.card{padding:20px}.hero{padding-top:125px}.pill{font-size:.78rem}.eight .card{min-height:155px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<nav class="nav"><div class="navin">
+<a class="brand" href="#top" aria-label="Einspiree, ke awal"><span class="brandmark">E</span> einspiree</a>
+<div class="navlinks" id="navlinks"><a href="#journey">Perjalanan</a><a href="#sources">Sumber Ide</a><a href="#barriers">Hambatan</a><a href="#craft">Teknik Menulis</a><a href="#clinic">Writer's Clinic</a></div>
+<button class="menu" id="menu" aria-label="Buka navigasi" aria-expanded="false">Menu ☰</button>
+</div></nav>
+<header class="hero" id="top"><div class="orb"></div><div class="wrap">
+<div class="eyebrow">EinSight Webinar · Batch #2</div>
+<h1>THINK<span>WRITE</span>INSPIRE.</h1>
+<p class="subtitle">From Personal Insight to Collective Impact</p>
+<p style="max-width:650px;color:#55758a;font-size:1.05rem">Sebuah perjalanan dari mengolah pikiran, mengabadikan gagasan, hingga menggerakkan kehidupan melalui tulisan.</p>
+<div class="hero-meta"><span class="pill">🎙 Ustadz Ahmad Rifa'i Rif'an</span><span class="pill">30 Oktober 2026</span><span class="pill">Einspiree · EinSight #2</span></div>
+<div class="hero-quote"><strong>Satu gagasan yang ditulis hari ini</strong>bisa menjadi pengetahuan, inspirasi, bahkan perubahan bagi seseorang di masa depan.</div>
+</div></header>
+
+<main>
+<section class="section" id="journey"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">01 · The starting point</div><h2>Kita semakin mudah mendapat jawaban. Tapi, apakah kita masih sungguh-sungguh berpikir?</h2><p class="lead">Teknologi membuat informasi hadir dalam hitungan detik. Referensi mudah dicari, jawaban cepat diperoleh, dan AI dapat membantu menyusun banyak hal. Namun kemudahan itu juga bisa membuat kita terbiasa menerima hasil tanpa menjalani proses berpikir yang mendalam.</p></div>
+<div class="note reveal"><p class="bigline">Akal bukan sekadar fasilitas. Ia adalah <em>amanah</em> yang perlu didayagunakan.</p><p>Berpikir, menimbang, menghubungkan, dan mempertanyakan adalah bagian dari tanggung jawab manusia. Jangan sampai kemudahan membuat kita kehilangan kebiasaan mengolah pengetahuan.</p></div>
+</div></section>
+
+<section class="section white"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">02 · The big idea</div><h2>Tiga kata. Satu perjalanan.</h2><p class="lead">Gagasan tidak seharusnya berhenti di kepala. Ia perlu diolah, diikat, lalu dibagikan.</p></div>
+<div class="flow">
+<div class="card reveal"><div class="num">01 / THINK</div><h3>Olah pikiran</h3><p>Jangan hanya mengumpulkan informasi. Beri ruang untuk merenung, menguji, dan menyusun pemahaman.</p></div>
+<div class="card reveal delay1"><div class="num">02 / WRITE</div><h3>Abadikan gagasan</h3><p>Tulisan mengikat ilmu agar tidak menguap bersama ingatan dan memungkinkan pengetahuan diwariskan.</p></div>
+<div class="card reveal delay2"><div class="num">03 / INSPIRE</div><h3>Gerakkan perubahan</h3><p>Ketika gagasan dibaca dan diamalkan, pengalaman personal dapat memberi dampak yang lebih luas.</p></div>
+</div>
+</div></section>
+
+<section class="section blue"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">03 · A learner's responsibility</div><h2>Menjadi pembelajar berarti memikul tiga tanggung jawab.</h2><p class="lead">Belajar bukan aktivitas yang selesai ketika kelas berakhir. Pengetahuan menuntut tindak lanjut.</p></div>
+<div class="grid">
+<div class="card dark reveal"><div class="num">01</div><h3>Learn</h3><p>Menjaga rasa ingin tahu dan memperbarui pengetahuan sepanjang hayat. Tetap menjadi pembaca, penanya, dan pencari ilmu.</p></div>
+<div class="card dark reveal delay1"><div class="num">02</div><h3>Practice</h3><p>Menerjemahkan pengetahuan menjadi tindakan dan kebiasaan. Ilmu perlu terlihat dalam cara kita menjalani hidup.</p></div>
+<div class="card dark reveal delay2"><div class="num">03</div><h3>Share</h3><p>Menyebarkan ilmu agar manfaatnya tumbuh pada orang lain. Jangan menunggu lulus untuk mulai mengajar.</p></div>
+</div>
+<p class="lead reveal" style="margin-top:28px">Belajar sambil mengajar membuat kita lebih serius memahami materi. Ketika hendak menjelaskan, kita terdorong melengkapi bagian yang belum kita kuasai. Akses kepada guru, dosen, buku, dan referensi justru sedang terbuka lebar saat kita masih berada di lingkungan belajar.</p>
+</div></section>
+
+<section class="section" id="sources"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">04 · Idea laboratory</div><h2>Delapan sumber ide yang sebenarnya dekat dengan kita.</h2><p class="lead">Tidak harus menunggu pengalaman luar biasa. Kehidupan sehari-hari menyimpan banyak bahan tulisan. Pilih kartu untuk membuka penjelasannya.</p></div>
+<div class="eight" id="ideaCards">
+<div class="card interactive reveal"><div class="num">01</div><h3>Knowledge</h3><p>Ilmu yang telah dipelajari.</p><div class="detail">Gali materi dari sekolah, kampus, pesantren, buku, kajian, atau bidang yang sedang kamu tekuni. Bagikan kembali dengan pemahamanmu sendiri.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay1"><div class="num">02</div><h3>Experience</h3><p>Pengalaman hidup.</p><div class="detail">Pengalaman sederhana, termasuk cara melewati suatu masalah, mungkin menjadi jawaban bagi orang lain yang sedang menghadapi hal serupa.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay2"><div class="num">03</div><h3>Interest</h3><p>Hal yang kamu sukai.</p><div class="detail">Mulailah dari tema yang membuatmu bersemangat. Ketertarikan membantu menjaga konsistensi ketika kebiasaan menulis sedang dibangun.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay3"><div class="num">04</div><h3>Opinion</h3><p>Pandangan dan pendapat.</p><div class="detail">Jangan takut memiliki sudut pandang. Pendapat yang disertai alasan dan keterbukaan terhadap koreksi dapat memperkaya diskusi.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal"><div class="num">05</div><h3>Emotion</h3><p>Emosi yang dialami.</p><div class="detail">Kemarahan, kesedihan, dan kebahagiaan dapat diolah menjadi tulisan. Menulis membantu kita memahami perasaan sebelum merespons keadaan.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay1"><div class="num">06</div><h3>Problem</h3><p>Persoalan di sekitar.</p><div class="detail">Masalah pribadi maupun sosial bisa menjadi bahan tulisan yang relevan, terutama jika disertai usaha memahami akar dan kemungkinan solusinya.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay2"><div class="num">07</div><h3>Question</h3><p>Pertanyaan di kepala.</p><div class="detail">Rasa ingin tahu adalah pintu penelitian. Catat pertanyaan, telusuri referensi, dan biarkan pencarian itu membentuk gagasan.</div><span class="tap">Klik untuk membuka +</span></div>
+<div class="card interactive reveal delay3"><div class="num">08</div><h3>Reflection</h3><p>Hikmah perjalanan hidup.</p><div class="detail">Pelajaran setelah melewati suatu peristiwa jangan hanya disimpan sendiri. Tuliskan agar orang lain dapat belajar tanpa harus mengalami hal yang sama.</div><span class="tap">Klik untuk membuka +</span></div>
+</div>
+</div></section>
+
+<section class="section white" id="barriers"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">05 · The invisible walls</div><h2>Ide sudah ada. Mengapa tulisan belum juga lahir?</h2><p class="lead">Hambatan menulis sering kali bukan ketiadaan ide, melainkan keraguan dan kebiasaan yang belum kita tata. Klik hambatan yang paling sering kamu rasakan.</p></div>
+<div class="grid two" id="barrierCards">
+<div class="card interactive reveal"><div class="barrier"><b>01</b><h3>Kurang percaya diri</h3></div><p>Takut salah, sepi pembaca, atau dibandingkan dengan penulis lain.</p><div class="detail">Publikasi bukan panggung untuk membuktikan diri paling hebat. Ia adalah kesempatan agar karya menemukan pembacanya. Mulai dari ruang yang nyaman.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal delay1"><div class="barrier"><b>02</b><h3>Perfeksionisme</h3></div><p>Menunggu naskah sempurna sebelum berani memulai.</p><div class="detail">Kesempurnaan sering menjadi alasan untuk menunda. Selesaikan draf, lalu perbaiki. Setiap karya adalah rekam jejak proses belajar.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal"><div class="barrier"><b>03</b><h3>Rasa malas</h3></div><p>Menunggu dorongan yang tidak kunjung datang.</p><div class="detail">Jangan menggantungkan semuanya pada mood. Buat target kecil yang realistis dan mulai meski hanya beberapa paragraf.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal delay1"><div class="barrier"><b>04</b><h3>Merasa tidak prospektif</h3></div><p>Takut ditolak, tidak laku, atau tidak dibaca.</p><div class="detail">Geser ukuran keberhasilan. Satu pembaca yang terbantu tetap berarti. Penerbit mayor bukan satu-satunya jalur; ada self-publishing dan media digital.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal"><div class="barrier"><b>05</b><h3>Tidak tahu caranya</h3></div><p>Belum memahami teknik dan struktur.</p><div class="detail">Ini hambatan yang bisa dipelajari. Cari panduan, ikuti kelas, baca buku, dan berlatih. Jangan jadikan belum tahu sebagai alasan untuk tidak mencari tahu.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal delay1"><div class="barrier"><b>06</b><h3>Merasa tidak punya ide</h3></div><p>Tidak peka melihat bahan di sekitar.</p><div class="detail">Latih kepekaan. Catat percakapan, pertanyaan, pengalaman, dan hal kecil yang membuatmu berpikir. Ide sering muncul setelah kita mulai memperhatikan.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal"><div class="barrier"><b>07</b><h3>Merasa tidak punya waktu</h3></div><p>Kesibukan membuat menulis selalu tertunda.</p><div class="detail">Periksa prioritas dan cari waktu yang realistis. Kebiasaan singkat tetapi rutin sering lebih bertahan daripada menunggu satu hari luang yang sempurna.</div><span class="tap">Buka refleksi +</span></div>
+<div class="card interactive reveal delay1"><div class="barrier"><b>08</b><h3>Merasa tidak berbakat</h3></div><p>Menganggap menulis hanya milik orang tertentu.</p><div class="detail">Menulis adalah keterampilan yang dapat dilatih. Bakat bukan syarat untuk memulai; latihan dan konsistensi adalah bagian dari proses menjadi terampil.</div><span class="tap">Buka refleksi +</span></div>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">06 · Begin anyway</div><h2>Jangan menunggu siap untuk mulai.</h2><p class="lead">Tiga pengingat untuk menggeser fokus dari rasa takut menuju tindakan.</p></div>
+<div class="grid">
+<div class="card reveal"><div class="num">01 / START</div><h3>Kamu tidak harus memahami everything untuk memulai something.</h3><p>Belajar teknik menulis sambil menjalani prosesnya. Pengetahuan akan bertambah ketika kita bergerak.</p></div>
+<div class="card reveal delay1"><div class="num">02 / FOCUS</div><h3>Jika ingin menguasai everything, kamu bisa berakhir doing nothing.</h3><p>Jangan membebani awal perjalanan dengan tuntutan menguasai semuanya. Pilih satu langkah yang bisa dikerjakan.</p></div>
+<div class="card reveal delay2"><div class="num">03 / COURAGE</div><h3>Kamu tidak harus didukung everyone untuk menjadi someone.</h3><p>Dukungan semua orang bukan prasyarat untuk memberi manfaat. Berkaryalah dengan niat baik dan kesiapan untuk belajar.</p></div>
+</div>
+</div></section>
+
+<section class="section white" id="craft"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">07 · The craft</div><h2>Bagaimana membuat nonfiksi terasa renyah?</h2><p class="lead">Tulisan yang berisi tidak harus terasa seperti membaca buku teks. Lima pendekatan ini membantu gagasan lebih dekat dengan pembaca.</p></div>
+<div class="grid">
+<div class="card reveal"><div class="num">01</div><h3>Menulislah seperti mengobrol</h3><p>Bayangkan sedang menjelaskan sesuatu kepada sahabat. Jaga bahasa tetap hangat dan mudah diikuti.</p></div>
+<div class="card reveal delay1"><div class="num">02</div><h3>Gunakan storytelling</h3><p>Sisipkan kisah dan anekdot agar konsep yang berat terasa lebih hidup dan tidak menggurui.</p></div>
+<div class="card reveal delay2"><div class="num">03</div><h3>Masukkan pengalaman pribadi</h3><p>Pengalaman autentik memberi konteks dan warna yang tidak bisa digantikan oleh kumpulan teori semata.</p></div>
+<div class="card reveal"><div class="num">04</div><h3>Pilih bahasa yang dipahami</h3><p>Sederhanakan istilah akademis. Tujuan menulis adalah menyampaikan gagasan, bukan memamerkan istilah.</p></div>
+<div class="card reveal delay1"><div class="num">05</div><h3>Tulis dulu, edit kemudian</h3><p>Pisahkan proses melahirkan ide dari proses menyunting. Jangan biarkan editor di kepala menghentikan penulis di tangan.</p></div>
+<div class="card reveal delay2"><div class="num">BONUS</div><h3>Universal dalam kemasan</h3><p>Pilih judul, sampul, dan bahasa yang membuka pintu bagi pembaca dari latar belakang yang beragam.</p></div>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">08 · A writing formula</div><h2>Satu peristiwa bisa menjadi tulisan yang menyentuh.</h2><p class="lead">Gunakan Formula A-R-M untuk satu artikel atau satu subbab. Bukan sebagai kerangka keseluruhan buku.</p></div>
+<div class="formula">
+<div class="card reveal"><div class="letter">A</div><h3>APA</h3><p>Kisahkan peristiwanya secara jujur dan apa adanya. Beri pembaca gambaran tentang apa yang terjadi.</p></div>
+<div class="card reveal delay1"><div class="letter">R</div><h3>RASA</h3><p>Hadirkan emosi yang menyertai peristiwa. Apa yang kamu rasakan, pikirkan, atau perjuangkan?</p></div>
+<div class="card reveal delay2"><div class="letter">M</div><h3>MAKNA</h3><p>Tarik pelajaran yang dapat dibawa pembaca. Apa yang bisa dipahami atau dilakukan setelah membaca kisah itu?</p></div>
+</div>
+<div class="note reveal" style="margin-top:20px"><strong>Contoh alur:</strong> “Hari pertama mengajar terasa kacau” (APA) → “Saya gugup dan merasa tidak cukup siap” (RASA) → “Persiapan penting, tetapi keberanian belajar dari kelas juga bagian dari proses” (MAKNA).</div>
+</div></section>
+
+<section class="section white"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">09 · The writing rhythm</div><h2>Produktivitas bukan soal menunggu inspirasi.</h2><p class="lead">Bangun sistem sederhana agar ide bisa bergerak menjadi karya yang selesai.</p></div>
+<div class="steps reveal">
+<div class="step"><strong>01</strong><b>Disiplin</b><p>Jangan menunggu mood. Tetapkan waktu dan target realistis.</p></div>
+<div class="step"><strong>02</strong><b>Pisahkan proses</b><p>Tulis dulu, edit kemudian.</p></div>
+<div class="step"><strong>03</strong><b>Selesaikan</b><p>Selesai lebih penting daripada sempurna.</p></div>
+<div class="step"><strong>04</strong><b>Ulangi</b><p>Konsistensi mengalahkan bakat yang tidak dilatih.</p></div>
+</div>
+<div class="section-head reveal" style="margin:52px 0 22px"><h2 style="font-size:2rem">Lima kunci keberhasilan penulis</h2></div>
+<div class="checklist" id="writerChecklist">
+<label class="check"><input type="checkbox"><span><b>Motivasi kuat</b><br>Tahu mengapa kamu menulis.</span></label>
+<label class="check"><input type="checkbox"><span><b>Amunisi melimpah</b><br>Rajin membaca, berdiskusi, dan berinteraksi.</span></label>
+<label class="check"><input type="checkbox"><span><b>Eksekusi cepat</b><br>Catat ide sebelum menguap.</span></label>
+<label class="check"><input type="checkbox"><span><b>Konsistensi</b><br>Menulis secara rutin.</span></label>
+<label class="check"><input type="checkbox"><span><b>Publikasi</b><br>Berani membagikan karya dan menerima penilaian.</span></label>
+</div><div class="counter" id="checkCount" aria-live="polite">0 dari 5 kunci sudah ditandai.</div>
+</div></section>
+
+<section class="section" id="clinic"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">10 · Writer's clinic</div><h2>Pertanyaan yang sering muncul di kepala penulis.</h2><p class="lead">Beberapa persoalan praktis dari sesi tanya jawab bersama narasumber. Buka pertanyaan untuk membaca intisari jawabannya.</p></div>
+<div class="faq reveal">
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Mengapa menulis pengalaman pribadi terasa mudah, tetapi menulis cerpen tema lain terasa sulit?</span><span>＋</span></button><div class="answer">Pengalaman pribadi sudah menyediakan “amunisi”: peristiwa, suasana, dan detail yang kita kenal. Tema baru membutuhkan referensi tambahan. Perbanyak membaca lintas genre dan tema agar simpanan ide semakin kaya. Rasa stuck bisa menjadi tanda bahwa kita perlu mengisi kembali amunisi bacaan.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana mengolah kumpulan quotes seorang kiai menjadi buku yang tidak kaku?</span><span>＋</span></button><div class="answer">Jadikan kutipan sebagai pembuka bab atau subbab. Cantumkan kutipan dan atribusi secara utuh, lalu kembangkan dengan ulasan, pemahaman, dan refleksi pribadi. Dengan begitu, buku tidak berhenti menjadi kumpulan kutipan.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Apakah Formula A-R-M dipakai untuk satu subbab atau satu buku?</span><span>＋</span></button><div class="answer">Formula A-R-M digunakan untuk satu artikel atau satu subbab. Sebuah buku dapat berisi banyak artikel yang masing-masing memakai formula tersebut.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Apakah biografi harus mewawancarai seluruh keluarga dan santri tokoh?</span><span>＋</span></button><div class="answer">Kedalaman biografi dipengaruhi kelengkapan data dan keragaman perspektif. Keluarga dapat memberi kisah personal, sedangkan santri memberi gambaran interaksi tokoh di lingkungan yang lebih luas. Jika akses memungkinkan, perluas narasumber dan verifikasi informasi.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana mengatasi ide yang meloncat-loncat dan naskah yang tidak selesai?</span><span>＋</span></button><div class="answer">Pilih satu ide yang bahannya paling siap dan paling mungkin diselesaikan. Susun bab dari pertanyaan yang sering diajukan pembaca, lalu jawab satu per satu. Tetapkan target harian yang realistis dan tuntaskan naskah sebelum pindah ke ide lain.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana menyusun alur buku selain dengan storytelling?</span><span>＋</span></button><div class="answer">Storytelling adalah sisipan agar pembahasan terasa hidup, bukan kerangka keseluruhan buku. Untuk struktur buku, mulai dari konsep umum yang perlu dipahami, lalu bergerak ke pembahasan yang lebih khusus dan mendalam. Sisipkan kisah pada bagian yang tepat.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana menghadapi perfeksionisme dan kritik pembaca?</span><span>＋</span></button><div class="answer">Terima bahwa setiap naskah adalah bagian dari proses belajar. Beranilah menyelesaikan dan memublikasikan karya, lalu gunakan kritik sebagai bahan evaluasi. Tidak semua kritik harus diterima mentah-mentah, tetapi semuanya dapat dipertimbangkan dengan kepala dingin.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana menjaga privasi saat menulis pengalaman sensitif?</span><span>＋</span></button><div class="answer">Samarkan identitas dengan nama pena atau tokoh fiktif, dan ubah rincian yang dapat mengungkap orang terkait. Sudut pandang narasi juga dapat diubah. Tetap jaga martabat, keamanan, dan hak privasi pihak lain; jangan mengorbankan mereka demi dramatisasi cerita.</div></div>
+<div class="faqitem"><button class="faqbtn" aria-expanded="false"><span>Bagaimana jika naskah ditolak penerbit atau tidak menjadi best-seller?</span><span>＋</span></button><div class="answer">Ukur karya dari manfaatnya, bukan hanya angka penjualan atau cetak ulang. Ada pilihan penerbitan mandiri dan media digital. Bahkan satu atau dua pembaca yang terbantu merupakan dampak yang layak dihargai.</div></div>
+</div>
+</div></section>
+
+<section class="section blue"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">11 · The deeper purpose</div><h2>Ilmu adalah amanah. Tulisan adalah salah satu cara menjaganya.</h2></div>
+<p class="quote reveal" style="color:white">“Ilmu tidak semestinya berhenti pada diri sendiri. Ia perlu diamalkan, lalu dibagikan agar manfaatnya menjangkau lebih banyak kehidupan.”</p>
+<p class="lead reveal" style="margin-top:25px">Ada dampak personal ketika ilmu mengubah cara kita hidup. Ada pula dampak sosial ketika pengetahuan itu membantu orang lain. Bagi mereka yang mendapat kesempatan belajar, hadir tanggung jawab moral untuk membuka akses manfaat bagi sesama.</p>
+<div class="note reveal" style="margin-top:28px;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#e8f6fc"><strong style="color:#bde5f5">Niat sebelum publikasi.</strong><br>Menulis bukan semata mengejar pengakuan. Luruskan niat, jaga isi, dan usahakan karya selesai. Proses yang baik pun dapat bernilai ketika diniatkan sebagai amal kebaikan.</div>
+</div></section>
+
+<section class="closing" id="closing"><div class="wrap reveal">
+<div class="eyebrow">A note to every learner</div>
+<h2>Your ideas deserve to <span style="color:var(--blue)">live beyond you.</span></h2>
+<p>Jangan biarkan gagasan baik berhenti sebagai sesuatu yang hanya pernah kamu pikirkan. Mulailah dari satu halaman, satu pengalaman, satu pertanyaan. Pikirkan dengan jernih, tuliskan dengan jujur, bagikan dengan niat memberi manfaat.</p>
+<a class="btn" href="#top">Kembali ke awal ↑</a>
+<p style="margin-top:42px;font-size:.83rem">EinSight Webinar Batch #2 · <b>Think, Write, Inspire</b><br>Ustadz Ahmad Rifa'i Rif'an · 30 Oktober 2026</p>
+</div></section>
+</main>
+<footer><strong>einspiree</strong> · Revive Islamic Civilization<br>Rangkuman interaktif untuk belajar, merenung, dan bertumbuh.</footer>
+<script>
+const progress=document.getElementById('progress');
+function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.interactive').forEach(card=>{card.setAttribute('tabindex','0');card.setAttribute('role','button');card.setAttribute('aria-expanded','false');const toggle=()=>{card.classList.toggle('open');card.setAttribute('aria-expanded',card.classList.contains('open'));const tap=card.querySelector('.tap');if(tap)tap.textContent=card.classList.contains('open')?'Klik untuk menutup −':(tap.textContent.includes('Buka')?'Buka refleksi +':'Klik untuk membuka +')};card.addEventListener('click',toggle);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}})});
+document.querySelectorAll('.faqbtn').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;const active=item.classList.toggle('active');btn.setAttribute('aria-expanded',active);btn.querySelector('span:last-child').textContent=active?'−':'＋'}));
+const checks=[...document.querySelectorAll('#writerChecklist input')];function updateChecks(){const n=checks.filter(c=>c.checked).length;document.getElementById('checkCount').textContent=n+' dari 5 kunci sudah ditandai.'}checks.forEach(c=>c.addEventListener('change',updateChecks));
+const menu=document.getElementById('menu'),links=document.getElementById('navlinks');menu.addEventListener('click',()=>{const open=links.classList.toggle('show');menu.setAttribute('aria-expanded',open)});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('show');menu.setAttribute('aria-expanded','false')}));
+</script>
+</body></html>
